@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn-green {
+    background-color: theme('colors.green.500');
+    padding: theme('spacing.2') theme('spacing.4');
+  }
+  .animate-tab-navigator {
+    @apply transform transition duration-700 ease-in-out translate-x-0 ;
+  }
+  .card{
+    display: block;
+    border-radius: theme('borderRadius.lg');
+    background-color: theme('colors.white');
+    box-shadow: theme('boxShadow.lg');
+    object-fit: cover;
+    width: theme('spacing.64');
+    height: theme('spacing.64');
+  }
+  .card:hover{
+    box-shadow: theme('boxShadow.2xl');
+  }
+  .card-title{
+    font-size: theme('fontSize.2xl');
+    font-weight: theme('fontWeight.bold');
+    padding: theme('spacing.2') theme('spacing.4');
+  }
+  .card-subtitle{
+    font-size: theme('fontSize.lg');
+    font-weight: theme('fontWeight.bold');
+  }
+  .card-text{
+    font-size: theme('fontSize.lg');
+    font-weight: theme('fontWeight.normal');
+  }
+  .card-text:hover{
+    font-size: theme('fontSize.lg');
+    font-weight: theme('fontWeight.bold');
+  }
+  .card-header{
+    font-size: theme('fontSize.2xl');
+    font-weight: theme('fontWeight.bold');
+    display: flex;
+    justify-content: center;
+  }
+  .card img{
+    object-fit: cover;
+    width: theme('width.full');
+    height: theme('height.1/5');
+  }
+  .card-image{
+    display: flex;
+    justify-content: center;
+  }
+  
+
+}

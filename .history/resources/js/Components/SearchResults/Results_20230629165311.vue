@@ -1,0 +1,45 @@
+<script setup>
+import { ref, computed, watch, onMounted } from 'vue';
+import Tables from '@/Components/Tables/Tables.vue';
+import TableDataSet from '@/Components/Tables/TableDataSet.vue';
+import TableHead from '@/Components/Tables/TableHead.vue';
+import UlList from '@/Components/Lists/UlList.vue';
+import LiList from '@/Components/Lists/LiList.vue';
+
+this.props = defineProps({
+    data: {
+        type: Array,
+        required: false,
+        default: () => [],
+    },
+    DataTable: {
+        type: Object,
+        required: false,
+        default: () => { },
+    },
+    simpleSearch: {
+        type: Boolean,
+        default: false,
+    },
+    rejectedKeys: {
+        type: Array,
+        default: () => [],
+    },
+    complexSearch: {
+        type: Boolean,
+        default: false,
+    },
+    displayDataStyle: {
+        type: String,
+        default: 'table',
+    },
+    displayData: {
+        type: Boolean,
+        default: false,
+    },
+
+});
+</script>
+<template>
+
+</template>

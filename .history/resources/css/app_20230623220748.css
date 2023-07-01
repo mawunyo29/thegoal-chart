@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn-green {
+    background-color: theme('colors.green.500');
+    padding: theme('spacing.2') theme('spacing.4');
+  }
+  .animate-tab-navigator {
+    @apply transform transition duration-700 ease-in-out translate-x-0 ;
+  }
+  .card{
+    padding: theme('spacing.2') theme('spacing.4');
+    border-radius: theme('borderRadius.lg');
+    background-color: theme('colors.white');
+    box-shadow: theme('boxShadow.lg');
+    object-fit: cover;
+    width: theme('spacing.64');
+    height: theme('spacing.64');
+  }
+  .card:hover{
+    box-shadow: theme('boxShadow.2xl');
+    
+  }
+
+}
